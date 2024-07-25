@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "api/**/*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        { "src": "/api/localize/en", "dest": "/api/localize/en.js" },
+        { "src": "/api/localize/en/list", "dest": "/api/localize/list.js" }
+    ]
+}
